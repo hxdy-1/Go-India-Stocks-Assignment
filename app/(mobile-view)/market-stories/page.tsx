@@ -36,9 +36,25 @@ const MARKET_STORIES: MarketStories[] = [
 
 const Page = () => {
 	const router = useRouter();
-	const [screenWidth, setScreenWidth] = useState(window.screen.width);
+	const [screenWidth, setScreenWidth] = useState(0);
 
 	useEffect(() => {
+		const handleResize = () => {
+			setScreenWidth(window.innerWidth);
+		};
+
+		if (typeof window !== "undefined") {
+			setScreenWidth(window.innerWidth);
+			window.addEventListener("resize", handleResize);
+		}
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
+	useEffect(() => {
+		// Redirecting based on screen width
 		if (screenWidth <= 640) {
 			router.push("/market-stories");
 		} else {
