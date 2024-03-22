@@ -1,3 +1,26 @@
+# [Live Project](https://go-india-stocks-assignment-ruddy.vercel.app/)
+
+---
+
+# Installation Steps:
+
+Please install **Mobile Simulator (Chrome extension)** for a better mobile responsive testing experience <br>
+[Install Mobile Simulator - responsive testing tool (Chrome extension)](https://chromewebstore.google.com/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk)
+
+```bash
+# Clone the repository:
+git clone https://github.com/hxdy-1/Go-India-Stocks-Assignment.git
+
+# Navigate to the cloned repository:
+cd Go-India-Stocks-Assignment
+
+# Install dependencies:
+npm install
+
+# Run the project:
+npm run dev
+```
+
 # Snapshots of the assignment:
 
 ## Desktop view: 
