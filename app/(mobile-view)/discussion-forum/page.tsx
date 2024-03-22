@@ -70,12 +70,9 @@ const page = () => {
 	const [screenWidth, setScreenWidth] = useState(window.screen.width);
 
 	useEffect(() => {
-		// console.log(window.screen.width);
 		if (screenWidth <= 640) {
-			// console.log("less than");
 			router.push("/discussion-forum");
 		} else {
-			// console.log("greater than");
 			router.push("/");
 		}
 	}, [screenWidth]);
