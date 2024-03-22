@@ -34,7 +34,7 @@ const MARKET_STORIES: MarketStories[] = [
 	},
 ];
 
-const page = () => {
+const Page = () => {
 	const router = useRouter();
 	const [screenWidth, setScreenWidth] = useState(window.screen.width);
 
@@ -44,7 +44,7 @@ const page = () => {
 		} else {
 			router.push("/");
 		}
-	}, [screenWidth]);
+	}, [router, screenWidth]);
 
 	return (
 		<div className="mt-20">
@@ -62,4 +62,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Page;

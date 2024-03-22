@@ -16,7 +16,7 @@ export default function Home() {
 		} else {
 			router.push("/");
 		}
-	}, [screenWidth]);
+	}, [router, screenWidth]);
 	return (
 		<>
 			<main className="flex gap-14">

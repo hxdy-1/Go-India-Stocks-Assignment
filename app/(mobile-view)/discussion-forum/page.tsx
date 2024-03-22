@@ -65,7 +65,7 @@ const USER_DETAILS: UserDetails[] = [
 	},
 ];
 
-const page = () => {
+const Page = () => {
 	const router = useRouter();
 	const [screenWidth, setScreenWidth] = useState(window.screen.width);
 
@@ -75,7 +75,7 @@ const page = () => {
 		} else {
 			router.push("/");
 		}
-	}, [screenWidth]);
+	}, [router, screenWidth]);
 
 	return (
 		<div className="mt-14">
@@ -98,4 +98,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Page;
